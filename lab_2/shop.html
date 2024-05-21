@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Kenia&family=Lato:wght@400;900&family=Protest+Strike&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Kenia&family=Lato:wght@400;900&family=Protest+Revolution&family=Protest+Strike&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <img src="./logo.jpg" alt="logo" />
+      <a href="./index.html">Home</a>
+      <a href="./shop.html">Shop</a>
+    </nav>
+
+    <div class="search">
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <svg
+        id="search-btn"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#555"
+      >
+        <g>
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M11 2c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm0 16c3.867 0 7-3.133 7-7 0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7zm8.485.071l2.829 2.828-1.415 1.415-2.828-2.829 1.414-1.414z"
+          />
+        </g>
+      </svg>
+    </div>
+
+    <div class="filter" id="filterButtons">
+      <button class="active" data-type="all">All</button>
+    </div>
+
+    <main>
+      <div id="cards" class="cards"></div>
+      <div id="more-btn" class="btn-container">
+        <button>See more</button>
+      </div>
+    </main>
+
+    <section id="id01" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <header class="container">
+            <h2>Coffe Name</h2>
+            <a href="#" class="closebtn">×</a>
+          </header>
+          <div class="container">
+            <img src="./coffee_assets/cappuccino/portrait/cappuccino_pic_2_portrait.png" alt="">
+            <div class="coffee-data">
+              <div class="price-data">
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <p>price: 3.12$</p>
+              </div>
+              <p>Cappuccinos are a classic Italian type of coffee drink made of espresso, steamed milk, and thick foam in equal parts, infused with the delightful flavor of hazelnut. The name comes from the resemblance to the hoods worn by Capuchin monks. Making cappuccino is relatively easy and can be done at home too if you know how to make espresso.</p>
+            </div>
+          </div>
+          <footer class="container">
+           
+          </footer>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
